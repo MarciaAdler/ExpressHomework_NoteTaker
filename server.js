@@ -26,6 +26,7 @@ app.get("/api/notes", function(req, res) {
   });
 });
 
+// add new note
 app.post("/api/notes", function(req, res) {
   console.log(req.body);
   const newNote = req.body;
