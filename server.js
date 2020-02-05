@@ -7,7 +7,7 @@ const fs = require("fs");
 // Sets up the Express App
 // =============================================================
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use(express.static("public"));
 // Sets up the Express app to handle data parsing
